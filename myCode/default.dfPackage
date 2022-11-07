@@ -1,0 +1,55 @@
+package id4d83ek2lqlr7sk2lqls01;
+
+/**
+@version 2.0
+@physicalPackage
+@__modelType diagram 
+*/
+class diagram {
+/**
+@__ref <oiref:cpp#Class#CReversiConsoleView:oiref><oihard>
+@__modelType reference 
+*/
+class reference1 {
+}
+/**
+@__ref <oiref:cpp#Class#CReversiBoard:oiref><oihard>
+@__modelType reference 
+*/
+class reference {
+}
+}/**
+@__tags
+@shapeType ClassDiagram
+@changelog rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVz
+aG9sZHhwP0AAAAAAAAx3CAAAABAAAAABc3IADmphdmEubGFuZy5Mb25nO4vkkMyPI98CAAFKAAV2
+YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAW443GwAc3IAE2phdmEudXRp
+bC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAF3BAAAAApzcgAlZGUubW5sLmRvY2Jv
+b2s0VEEuaW1wbC5DaGFuZ2VMb2dFbnRyeQeNjrX5qiSfAgADTAAIaG9zdG5hbWV0ABJMamF2YS9s
+YW5nL1N0cmluZztMAARuYW1lcQB+AAhMAAR1c2VycQB+AAh4cHQAD0RFU0tUT1AtQUlEMUZLRXQA
+CTxkZWZhdWx0PnQABFJlemF4eA== 
+@elementChangelogs rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVz
+aG9sZHhwP0AAAAAAAAx3CAAAABAAAAABdAAlPG9pcmVmOmNwcCNDbGFzcyNDUmV2ZXJzaUJvYXJk
+Om9pcmVmPnNxAH4AAD9AAAAAAAAMdwgAAAAQAAAAAXNyAA5qYXZhLmxhbmcuTG9uZzuL5JDMjyPf
+AgABSgAFdmFsdWV4cgAQamF2YS5sYW5nLk51bWJlcoaslR0LlOCLAgAAeHAAAAFuONxsAHNyABNq
+YXZhLnV0aWwuQXJyYXlMaXN0eIHSHZnHYZ0DAAFJAARzaXpleHAAAAABdwQAAAAKc3IAJWRlLm1u
+bC5kb2Nib29rNFRBLmltcGwuQ2hhbmdlTG9nRW50cnkHjY61+aoknwIAA0wACGhvc3RuYW1ldAAS
+TGphdmEvbGFuZy9TdHJpbmc7TAAEbmFtZXEAfgAKTAAEdXNlcnEAfgAKeHB0AA9ERVNLVE9QLUFJ
+RDFGS0V0AA1DUmV2ZXJzaUJvYXJkdAAEUmV6YXh4eA==
+*/
+class __tags {
+}/**
+@__options 
+*/
+class __options {
+}/**
+@__positions <oigroup:Autodependency<oiref:cpp#Class#ReversiBoard:oiref><Autodependency><oiref:cpp#Class#field_s:oiref>=456,210,456,149:oigroup>
+<oigroup:Composite#supplierCardinality#MemberLink#<oiref:cpp#Member#CReversiConsoleView#m_pReversiBoard:oiref>=330,230,28,16,0:oigroup>
+<oigroup:Autodependency<oiref:cpp#Class#ReversiBoard:oiref><Autodependency><oiref:cpp#Class#CReversiConsoleView:oiref>=356,247,290,247:oigroup>
+<oigroup:Autodependency<oiref:cpp#Class#CReversiConsoleView:oiref><Autodependency><oiref:cpp#Class#ReversiBoard:oiref>=155,243,356,243:oigroup>
+<oigroup:<oiref:cpp#Class#CReversiConsoleView:oiref>=10,190,280,120,0:oigroup>
+<oigroup:<oiref:cpp#Class#CReversiBoard:oiref>=349,59,200,558,1:oigroup>
+<oigroup:MemberLink#<oiref:cpp#Member#CReversiConsoleView#m_pReversiBoard:oiref>=290,250,349,250:oigroup>
+*/
+class __positions {
+}

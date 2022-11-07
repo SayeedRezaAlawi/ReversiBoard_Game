@@ -1,0 +1,381 @@
+\hypertarget{class_c_reversi_board}{}\doxysection{C\+Reversi\+Board Class Reference}
+\label{class_c_reversi_board}\index{CReversiBoard@{CReversiBoard}}
+
+
+{\ttfamily \#include $<$Reversi\+Board.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_reversi_board_a1b7106b7315ae53164c854155e0dc0bb}{C\+Reversi\+Board}} (int x, int y)
+\item 
+\mbox{\hyperlink{class_c_reversi_board_a02630c5489eb407efa0ca15f18ec13ed}{$\sim$\+C\+Reversi\+Board}} ()
+\item 
+void \mbox{\hyperlink{class_c_reversi_board_add4f6c1ace10020e8fa61e12250e3fb4}{put\+Piece}} ()
+\item 
+void \mbox{\hyperlink{class_c_reversi_board_a84c03d6224b82abcf779a7f488aa5cf8}{board\+Scan}} ()
+\item 
+void \mbox{\hyperlink{class_c_reversi_board_a114aa81d7410a007d632a1b472214ce6}{set\+Field\+State}} (int x, int y, int Field\+Status)
+\item 
+void \mbox{\hyperlink{class_c_reversi_board_a02d12ab8538585674ce95e0ec14c809f}{set\+Player\+Score}} (int player, int score)
+\item 
+unsigned short \mbox{\hyperlink{class_c_reversi_board_abf9c550a454fdacd3f58c19cba09b8d7}{get\+Field\+State}} (int x, int y)
+\item 
+unsigned short \mbox{\hyperlink{class_c_reversi_board_aaa40b5c18efefca8e267df54d8b751d3}{get\+Player\+Score}} (int player)
+\item 
+unsigned short \mbox{\hyperlink{class_c_reversi_board_a8300744d091dae86bbe935247dd9a467}{get\+Board\+SizeX}} ()
+\item 
+unsigned short \mbox{\hyperlink{class_c_reversi_board_a89f950f1385df3bb52e15b6e03c919d3}{get\+Board\+SizeY}} ()
+\item 
+unsigned short \mbox{\hyperlink{class_c_reversi_board_afffa6a83577922278878f11f19fc3326}{get\+Winer}} ()
+\item 
+void \mbox{\hyperlink{class_c_reversi_board_a734983be8e13767e9273b8ce0ead2f9f}{print}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716d}{field\+\_\+s}} \{ \mbox{\hyperlink{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716daddc9a681efc725362e849511e96cbf75}{Not\+Occupied}}, 
+\mbox{\hyperlink{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716da0047dd0cbb7985dbe32b5f090b4d8c4e}{White}}, 
+\mbox{\hyperlink{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716da30ebda4ad0ee49ac8b7497519f53d954}{Black}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_reversi_board_a168e2a146738cc6083e9d16c756fa9ba}{horizontal\+Right\+Scan}} ()
+\item 
+void \mbox{\hyperlink{class_c_reversi_board_a8fd016dd5f8dd9fee4015bd82a156a21}{horizontal\+Left\+Scan}} ()
+\item 
+void \mbox{\hyperlink{class_c_reversi_board_ae270001969b1ff1f10883bb797f646b6}{vertical\+Up\+Scan}} ()
+\item 
+void \mbox{\hyperlink{class_c_reversi_board_a914af8989d563571a1b4112beb036384}{vertical\+Down\+Scan}} ()
+\item 
+void \mbox{\hyperlink{class_c_reversi_board_aec749ce2eec79d5773469b51c8ceeec5}{diagonal\+Right\+Up\+Scan}} ()
+\item 
+void \mbox{\hyperlink{class_c_reversi_board_a16d985f56c1ad262b3c28deb7f80bede}{diagonal\+Right\+Down\+Scan}} ()
+\item 
+void \mbox{\hyperlink{class_c_reversi_board_aa0e4b4dcafc57822d2db4f1c6d358874}{diagonal\+Left\+Up\+Scan}} ()
+\item 
+void \mbox{\hyperlink{class_c_reversi_board_a097bf6bc5ad3d0934464e10cbf3343a7}{diagonal\+Left\+Down\+Scan}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716d}{field\+\_\+s}} $\ast$$\ast$ \mbox{\hyperlink{class_c_reversi_board_a7e10f26c8ae4078481d5205e52bc78e4}{m\+\_\+fields}}
+\item 
+\mbox{\hyperlink{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716d}{field\+\_\+s}} \mbox{\hyperlink{class_c_reversi_board_a9610d4005bc9d1c5830f9d9aef733847}{Field\+State}}
+\item 
+unsigned short \mbox{\hyperlink{class_c_reversi_board_a5d382af09ff5d8b7095769728df2949b}{m\+\_\+sizex}}
+\item 
+unsigned short \mbox{\hyperlink{class_c_reversi_board_a745c61425737f1837269f8e502f2f582}{m\+\_\+sizey}}
+\item 
+unsigned short \mbox{\hyperlink{class_c_reversi_board_addca3f08e587e329f47607a7cd5d5069}{m\+\_\+player\+Index}} = 1
+\item 
+unsigned short \mbox{\hyperlink{class_c_reversi_board_ae3ca0154a5c040a4342ea8e38af2ffeb}{m\+\_\+player1\+Score}} = 0
+\item 
+unsigned short \mbox{\hyperlink{class_c_reversi_board_a861166cb4bf238e4b82d7280fbfa4232}{m\+\_\+player2\+Score}} = 0
+\item 
+unsigned short \mbox{\hyperlink{class_c_reversi_board_a3551e5ef55a00b35bd8583c92a2f6da3}{m\+\_\+inputposition\+\_\+x}} = 0
+\item 
+unsigned short \mbox{\hyperlink{class_c_reversi_board_a2e32172ef39fa48410bdd2b0176cb9ad}{m\+\_\+inputposition\+\_\+y}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates a Reversi Game Board with size x=8 and size y=8 and let player to put a new piece on board. It scans the board for increasing or decreasing players score. It also provides each field state, players score. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716d}\label{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716d}} 
+\index{CReversiBoard@{CReversiBoard}!field\_s@{field\_s}}
+\index{field\_s@{field\_s}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{field\_s}{field\_s}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716d}{C\+Reversi\+Board\+::field\+\_\+s}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+\_\+s} & define a enumeration type for field state. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotOccupied@{NotOccupied}!CReversiBoard@{CReversiBoard}}\index{CReversiBoard@{CReversiBoard}!NotOccupied@{NotOccupied}}}\mbox{\Hypertarget{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716daddc9a681efc725362e849511e96cbf75}\label{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716daddc9a681efc725362e849511e96cbf75}} 
+Not\+Occupied&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{White@{White}!CReversiBoard@{CReversiBoard}}\index{CReversiBoard@{CReversiBoard}!White@{White}}}\mbox{\Hypertarget{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716da0047dd0cbb7985dbe32b5f090b4d8c4e}\label{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716da0047dd0cbb7985dbe32b5f090b4d8c4e}} 
+White&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Black@{Black}!CReversiBoard@{CReversiBoard}}\index{CReversiBoard@{CReversiBoard}!Black@{Black}}}\mbox{\Hypertarget{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716da30ebda4ad0ee49ac8b7497519f53d954}\label{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716da30ebda4ad0ee49ac8b7497519f53d954}} 
+Black&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_reversi_board_a1b7106b7315ae53164c854155e0dc0bb}\label{class_c_reversi_board_a1b7106b7315ae53164c854155e0dc0bb}} 
+\index{CReversiBoard@{CReversiBoard}!CReversiBoard@{CReversiBoard}}
+\index{CReversiBoard@{CReversiBoard}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{CReversiBoard()}{CReversiBoard()}}
+{\footnotesize\ttfamily C\+Reversi\+Board\+::\+C\+Reversi\+Board (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Constructor of \mbox{\hyperlink{class_c_reversi_board}{C\+Reversi\+Board}} which allocate a 2D memory array to create board and hold each field state. 
+\begin{DoxyParams}{Parameters}
+{\em x} & size of board in x direction. \\
+\hline
+{\em y} & size of board in y direction. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_reversi_board_a02630c5489eb407efa0ca15f18ec13ed}\label{class_c_reversi_board_a02630c5489eb407efa0ca15f18ec13ed}} 
+\index{CReversiBoard@{CReversiBoard}!````~CReversiBoard@{$\sim$CReversiBoard}}
+\index{````~CReversiBoard@{$\sim$CReversiBoard}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{$\sim$CReversiBoard()}{~CReversiBoard()}}
+{\footnotesize\ttfamily C\+Reversi\+Board\+::$\sim$\+C\+Reversi\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Frees the allocated memory. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_reversi_board_a84c03d6224b82abcf779a7f488aa5cf8}\label{class_c_reversi_board_a84c03d6224b82abcf779a7f488aa5cf8}} 
+\index{CReversiBoard@{CReversiBoard}!boardScan@{boardScan}}
+\index{boardScan@{boardScan}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{boardScan()}{boardScan()}}
+{\footnotesize\ttfamily void C\+Reversi\+Board\+::board\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Scan board according different conditions and call different direction scan methods. \mbox{\Hypertarget{class_c_reversi_board_a097bf6bc5ad3d0934464e10cbf3343a7}\label{class_c_reversi_board_a097bf6bc5ad3d0934464e10cbf3343a7}} 
+\index{CReversiBoard@{CReversiBoard}!diagonalLeftDownScan@{diagonalLeftDownScan}}
+\index{diagonalLeftDownScan@{diagonalLeftDownScan}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{diagonalLeftDownScan()}{diagonalLeftDownScan()}}
+{\footnotesize\ttfamily void C\+Reversi\+Board\+::diagonal\+Left\+Down\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Enables board scan in diagonal left-\/down side. It can only be called by board\+Scan method if some condition fulfilled. \mbox{\Hypertarget{class_c_reversi_board_aa0e4b4dcafc57822d2db4f1c6d358874}\label{class_c_reversi_board_aa0e4b4dcafc57822d2db4f1c6d358874}} 
+\index{CReversiBoard@{CReversiBoard}!diagonalLeftUpScan@{diagonalLeftUpScan}}
+\index{diagonalLeftUpScan@{diagonalLeftUpScan}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{diagonalLeftUpScan()}{diagonalLeftUpScan()}}
+{\footnotesize\ttfamily void C\+Reversi\+Board\+::diagonal\+Left\+Up\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Enables board scan in diagonal left-\/up side. It can only be called by board\+Scan method if some condition fulfilled. \mbox{\Hypertarget{class_c_reversi_board_a16d985f56c1ad262b3c28deb7f80bede}\label{class_c_reversi_board_a16d985f56c1ad262b3c28deb7f80bede}} 
+\index{CReversiBoard@{CReversiBoard}!diagonalRightDownScan@{diagonalRightDownScan}}
+\index{diagonalRightDownScan@{diagonalRightDownScan}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{diagonalRightDownScan()}{diagonalRightDownScan()}}
+{\footnotesize\ttfamily void C\+Reversi\+Board\+::diagonal\+Right\+Down\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Enables board scan in diagonal right-\/down side. It can only be called by board\+Scan method if some condition fulfilled. \mbox{\Hypertarget{class_c_reversi_board_aec749ce2eec79d5773469b51c8ceeec5}\label{class_c_reversi_board_aec749ce2eec79d5773469b51c8ceeec5}} 
+\index{CReversiBoard@{CReversiBoard}!diagonalRightUpScan@{diagonalRightUpScan}}
+\index{diagonalRightUpScan@{diagonalRightUpScan}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{diagonalRightUpScan()}{diagonalRightUpScan()}}
+{\footnotesize\ttfamily void C\+Reversi\+Board\+::diagonal\+Right\+Up\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Enables board scan in diagonal right-\/up side. It can only be called by board\+Scan method if some condition fulfilled. \mbox{\Hypertarget{class_c_reversi_board_a8300744d091dae86bbe935247dd9a467}\label{class_c_reversi_board_a8300744d091dae86bbe935247dd9a467}} 
+\index{CReversiBoard@{CReversiBoard}!getBoardSizeX@{getBoardSizeX}}
+\index{getBoardSizeX@{getBoardSizeX}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{getBoardSizeX()}{getBoardSizeX()}}
+{\footnotesize\ttfamily unsigned short C\+Reversi\+Board\+::get\+Board\+SizeX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns board size in X direction to print method of Reversi Console View class. \mbox{\Hypertarget{class_c_reversi_board_a89f950f1385df3bb52e15b6e03c919d3}\label{class_c_reversi_board_a89f950f1385df3bb52e15b6e03c919d3}} 
+\index{CReversiBoard@{CReversiBoard}!getBoardSizeY@{getBoardSizeY}}
+\index{getBoardSizeY@{getBoardSizeY}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{getBoardSizeY()}{getBoardSizeY()}}
+{\footnotesize\ttfamily unsigned short C\+Reversi\+Board\+::get\+Board\+SizeY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns board size in Y direction to print method of Reversi Console View class. \mbox{\Hypertarget{class_c_reversi_board_abf9c550a454fdacd3f58c19cba09b8d7}\label{class_c_reversi_board_abf9c550a454fdacd3f58c19cba09b8d7}} 
+\index{CReversiBoard@{CReversiBoard}!getFieldState@{getFieldState}}
+\index{getFieldState@{getFieldState}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{getFieldState()}{getFieldState()}}
+{\footnotesize\ttfamily unsigned short C\+Reversi\+Board\+::get\+Field\+State (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Returns the state of defined field by parameters x and y. 
+\begin{DoxyParams}{Parameters}
+{\em x} & position of board in x direction which player wants to get the state. \\
+\hline
+{\em y} & position of board in y direction which player wants to get the state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_reversi_board_aaa40b5c18efefca8e267df54d8b751d3}\label{class_c_reversi_board_aaa40b5c18efefca8e267df54d8b751d3}} 
+\index{CReversiBoard@{CReversiBoard}!getPlayerScore@{getPlayerScore}}
+\index{getPlayerScore@{getPlayerScore}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{getPlayerScore()}{getPlayerScore()}}
+{\footnotesize\ttfamily unsigned short C\+Reversi\+Board\+::get\+Player\+Score (\begin{DoxyParamCaption}\item[{int}]{player }\end{DoxyParamCaption})}
+
+Returns player score of player index defined in parameter. 
+\begin{DoxyParams}{Parameters}
+{\em player} & player index. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_reversi_board_afffa6a83577922278878f11f19fc3326}\label{class_c_reversi_board_afffa6a83577922278878f11f19fc3326}} 
+\index{CReversiBoard@{CReversiBoard}!getWiner@{getWiner}}
+\index{getWiner@{getWiner}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{getWiner()}{getWiner()}}
+{\footnotesize\ttfamily unsigned short C\+Reversi\+Board\+::get\+Winer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns winner player index if all pieces of board filled. \mbox{\Hypertarget{class_c_reversi_board_a8fd016dd5f8dd9fee4015bd82a156a21}\label{class_c_reversi_board_a8fd016dd5f8dd9fee4015bd82a156a21}} 
+\index{CReversiBoard@{CReversiBoard}!horizontalLeftScan@{horizontalLeftScan}}
+\index{horizontalLeftScan@{horizontalLeftScan}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{horizontalLeftScan()}{horizontalLeftScan()}}
+{\footnotesize\ttfamily void C\+Reversi\+Board\+::horizontal\+Left\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Enables board scan in horizontal left side. It can only be called by board\+Scan method if some condition fulfilled. \mbox{\Hypertarget{class_c_reversi_board_a168e2a146738cc6083e9d16c756fa9ba}\label{class_c_reversi_board_a168e2a146738cc6083e9d16c756fa9ba}} 
+\index{CReversiBoard@{CReversiBoard}!horizontalRightScan@{horizontalRightScan}}
+\index{horizontalRightScan@{horizontalRightScan}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{horizontalRightScan()}{horizontalRightScan()}}
+{\footnotesize\ttfamily void C\+Reversi\+Board\+::horizontal\+Right\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Enables board scan in horizontal right side. It can only be called by board\+Scan method if some condition fulfilled. \mbox{\Hypertarget{class_c_reversi_board_a734983be8e13767e9273b8ce0ead2f9f}\label{class_c_reversi_board_a734983be8e13767e9273b8ce0ead2f9f}} 
+\index{CReversiBoard@{CReversiBoard}!print@{print}}
+\index{print@{print}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void C\+Reversi\+Board\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints the board states in 2D direction view. \mbox{\Hypertarget{class_c_reversi_board_add4f6c1ace10020e8fa61e12250e3fb4}\label{class_c_reversi_board_add4f6c1ace10020e8fa61e12250e3fb4}} 
+\index{CReversiBoard@{CReversiBoard}!putPiece@{putPiece}}
+\index{putPiece@{putPiece}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{putPiece()}{putPiece()}}
+{\footnotesize\ttfamily void C\+Reversi\+Board\+::put\+Piece (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Enable player to put a new piece on the board. \mbox{\Hypertarget{class_c_reversi_board_a114aa81d7410a007d632a1b472214ce6}\label{class_c_reversi_board_a114aa81d7410a007d632a1b472214ce6}} 
+\index{CReversiBoard@{CReversiBoard}!setFieldState@{setFieldState}}
+\index{setFieldState@{setFieldState}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{setFieldState()}{setFieldState()}}
+{\footnotesize\ttfamily void C\+Reversi\+Board\+::set\+Field\+State (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{Field\+Status }\end{DoxyParamCaption})}
+
+Change the state of board after each round. 
+\begin{DoxyParams}{Parameters}
+{\em x} & position of board in x direction which player want to put new piece. \\
+\hline
+{\em y} & position of board in y direction which player want to put new piece. \\
+\hline
+{\em Field\+Status} & type of piece which player wants to put in defined position on board. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_reversi_board_a02d12ab8538585674ce95e0ec14c809f}\label{class_c_reversi_board_a02d12ab8538585674ce95e0ec14c809f}} 
+\index{CReversiBoard@{CReversiBoard}!setPlayerScore@{setPlayerScore}}
+\index{setPlayerScore@{setPlayerScore}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{setPlayerScore()}{setPlayerScore()}}
+{\footnotesize\ttfamily void C\+Reversi\+Board\+::set\+Player\+Score (\begin{DoxyParamCaption}\item[{int}]{player,  }\item[{int}]{score }\end{DoxyParamCaption})}
+
+Change the m\+\_\+player1\+Score or m\+\_\+player2\+Score variables after scanning board. 
+\begin{DoxyParams}{Parameters}
+{\em player} & indicates the player index. \\
+\hline
+{\em score} & is current score of each player after scanning. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_reversi_board_a914af8989d563571a1b4112beb036384}\label{class_c_reversi_board_a914af8989d563571a1b4112beb036384}} 
+\index{CReversiBoard@{CReversiBoard}!verticalDownScan@{verticalDownScan}}
+\index{verticalDownScan@{verticalDownScan}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{verticalDownScan()}{verticalDownScan()}}
+{\footnotesize\ttfamily void C\+Reversi\+Board\+::vertical\+Down\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Enables board scan in vertical down side. It can only be called by board\+Scan method if some condition fulfilled. \mbox{\Hypertarget{class_c_reversi_board_ae270001969b1ff1f10883bb797f646b6}\label{class_c_reversi_board_ae270001969b1ff1f10883bb797f646b6}} 
+\index{CReversiBoard@{CReversiBoard}!verticalUpScan@{verticalUpScan}}
+\index{verticalUpScan@{verticalUpScan}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{verticalUpScan()}{verticalUpScan()}}
+{\footnotesize\ttfamily void C\+Reversi\+Board\+::vertical\+Up\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Enables board scan in vertical up side. It can only be called by board\+Scan method if some condition fulfilled. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_reversi_board_a9610d4005bc9d1c5830f9d9aef733847}\label{class_c_reversi_board_a9610d4005bc9d1c5830f9d9aef733847}} 
+\index{CReversiBoard@{CReversiBoard}!FieldState@{FieldState}}
+\index{FieldState@{FieldState}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{FieldState}{FieldState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716d}{field\+\_\+s}} C\+Reversi\+Board\+::\+Field\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Field\+State} & is enum type variable to store field state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_reversi_board_a7e10f26c8ae4078481d5205e52bc78e4}\label{class_c_reversi_board_a7e10f26c8ae4078481d5205e52bc78e4}} 
+\index{CReversiBoard@{CReversiBoard}!m\_fields@{m\_fields}}
+\index{m\_fields@{m\_fields}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{m\_fields}{m\_fields}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_reversi_board_a872619bf8d59c82cf2d865161f41716d}{field\+\_\+s}}$\ast$$\ast$ C\+Reversi\+Board\+::m\+\_\+fields\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$$\ast$m\+\_\+fields} & is a 2D dynamic memory and allocated to retain state on each field of board. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_reversi_board_a3551e5ef55a00b35bd8583c92a2f6da3}\label{class_c_reversi_board_a3551e5ef55a00b35bd8583c92a2f6da3}} 
+\index{CReversiBoard@{CReversiBoard}!m\_inputposition\_x@{m\_inputposition\_x}}
+\index{m\_inputposition\_x@{m\_inputposition\_x}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{m\_inputposition\_x}{m\_inputposition\_x}}
+{\footnotesize\ttfamily unsigned short C\+Reversi\+Board\+::m\+\_\+inputposition\+\_\+x = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+inputposition\+\_\+x} & retain x position of field which selected by each player. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_reversi_board_a2e32172ef39fa48410bdd2b0176cb9ad}\label{class_c_reversi_board_a2e32172ef39fa48410bdd2b0176cb9ad}} 
+\index{CReversiBoard@{CReversiBoard}!m\_inputposition\_y@{m\_inputposition\_y}}
+\index{m\_inputposition\_y@{m\_inputposition\_y}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{m\_inputposition\_y}{m\_inputposition\_y}}
+{\footnotesize\ttfamily unsigned short C\+Reversi\+Board\+::m\+\_\+inputposition\+\_\+y = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+inputposition\+\_\+y} & holds y position of field which selected by each player. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_reversi_board_ae3ca0154a5c040a4342ea8e38af2ffeb}\label{class_c_reversi_board_ae3ca0154a5c040a4342ea8e38af2ffeb}} 
+\index{CReversiBoard@{CReversiBoard}!m\_player1Score@{m\_player1Score}}
+\index{m\_player1Score@{m\_player1Score}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{m\_player1Score}{m\_player1Score}}
+{\footnotesize\ttfamily unsigned short C\+Reversi\+Board\+::m\+\_\+player1\+Score = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+player1\+Score} & retain player 1 score in each round. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_reversi_board_a861166cb4bf238e4b82d7280fbfa4232}\label{class_c_reversi_board_a861166cb4bf238e4b82d7280fbfa4232}} 
+\index{CReversiBoard@{CReversiBoard}!m\_player2Score@{m\_player2Score}}
+\index{m\_player2Score@{m\_player2Score}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{m\_player2Score}{m\_player2Score}}
+{\footnotesize\ttfamily unsigned short C\+Reversi\+Board\+::m\+\_\+player2\+Score = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+player2\+Score} & holds player 2 score in each round. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_reversi_board_addca3f08e587e329f47607a7cd5d5069}\label{class_c_reversi_board_addca3f08e587e329f47607a7cd5d5069}} 
+\index{CReversiBoard@{CReversiBoard}!m\_playerIndex@{m\_playerIndex}}
+\index{m\_playerIndex@{m\_playerIndex}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{m\_playerIndex}{m\_playerIndex}}
+{\footnotesize\ttfamily unsigned short C\+Reversi\+Board\+::m\+\_\+player\+Index = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+player\+Index} & is used to store player index. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_reversi_board_a5d382af09ff5d8b7095769728df2949b}\label{class_c_reversi_board_a5d382af09ff5d8b7095769728df2949b}} 
+\index{CReversiBoard@{CReversiBoard}!m\_sizex@{m\_sizex}}
+\index{m\_sizex@{m\_sizex}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{m\_sizex}{m\_sizex}}
+{\footnotesize\ttfamily unsigned short C\+Reversi\+Board\+::m\+\_\+sizex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+sizex} & is used to store size x of board. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_reversi_board_a745c61425737f1837269f8e502f2f582}\label{class_c_reversi_board_a745c61425737f1837269f8e502f2f582}} 
+\index{CReversiBoard@{CReversiBoard}!m\_sizey@{m\_sizey}}
+\index{m\_sizey@{m\_sizey}!CReversiBoard@{CReversiBoard}}
+\doxysubsubsection{\texorpdfstring{m\_sizey}{m\_sizey}}
+{\footnotesize\ttfamily unsigned short C\+Reversi\+Board\+::m\+\_\+sizey\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+sizey} & is used to store size y of board. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+my\+Code/\mbox{\hyperlink{_reversi_board_8h}{Reversi\+Board.\+h}}\item 
+my\+Code/\mbox{\hyperlink{_reversi_board_8cpp}{Reversi\+Board.\+cpp}}\end{DoxyCompactItemize}
